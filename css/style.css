@@ -18,14 +18,31 @@ body {
     -webkit-font-smoothing: antialiased !important;
 }
 
+/* ------------------------------------------------
+TITLE
+--------------------------------------------------- */
+h5 {
+    margin: 0 0 15px;
+    color: #202020;
+	/*font-family: 'Diplomata SC', cursive;*/
+	/*font-family: 'Fredericka the Great', cursive;*/
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Coda', cursive;
+}
+
+h5 {
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 46px;
+}
 
 /* ------------------------------------------------
 TYPOGRAPHY
 --------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
     margin: 0 0 15px;
-    color: #202020;
-    font-family: "Roboto", sans-serif;
+	color: #202020;
+	font-family: "Roboto", sans-serif;  
 }
 
 h1 {
@@ -45,6 +62,7 @@ h3 {
     line-height: 22px;
     font-weight: 700;
 }
+
 
 
 
@@ -190,7 +208,7 @@ SECTION
 	position: relative;
 	font-size: 28px;
 	line-height: 44px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .section-title:after {
@@ -314,7 +332,7 @@ NAVIGATION
 }
 
 /*Logo*/
-h1.logo {
+t1.logo {
     margin: 0;
     padding: 0;
 }
