@@ -629,7 +629,7 @@
 							</div><!-- /.col-md-2 -->
 							<div class="col-sm-3 col-md-3">
 								<div class="footer-widget">
-									<h3>Location</h3>
+									<h3>Locations</h3>
 									<address>
 									  Head office: Utah, USA<br>
 									  Montreal, Canada<br>
@@ -674,7 +674,7 @@
 									      </div>
 									      <div class="modal-body">
 							<!-- change to send form  -->
-											<form action="http://getsimpleform.com/messages?form_api_token=94642b66673da3da167a31593ec0eda1" method="post">
+											<form name="myForm" action="http://getsimpleform.com/messages?form_api_token=94642b66673da3da167a31593ec0eda1" onsubmit="return validateForm()" method="post">
 												<input type='hidden' name='redirect_to' value='https://netuser-py.github.io/KnDTech/' />  
 													<div class="control-group">
 														<div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -706,13 +706,20 @@
 														<textarea class="form-control" id='message' name='message' placeholder='Message' rows='4' cols='50' required="required" data-validation-required-message="Please enter a message."></textarea>
 													</div>
 												</div>
-												<br>					
-												<div id="success"></div>
-												<div class="form-group">
-													<input type='submit' class="btn btn-primary btn-xl" value='Send Message' />
+												<br>														
+												<div class="control-group">
+													<div class="form-group floating-label-form-group controls mb-0 pb-2">
+														<label for='answer'>We fly in the ____?</label>                  
+														<input class="form-control" type='text' id='answer' name='answer' placeholder='Your answer' required="required" data-validation-required-message="Please enter your answer." />              
+													</div>
+												</div>					
+											  <div id="success"></div>
+												<div class="form-group">																					
+													<input type="submit" class="btn btn-primary btn-xl" value='Send Message' /> 
 													<!-- <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send1</button> -->
 												</div>
 											</form>
+
 											<!--
 											<form id="contactForm" action="sendemail.php" method="POST">
 												<div class="row">
@@ -841,6 +848,7 @@
 	    <!-- GOGLE MAP -->
 	    <!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
 	    <!-- Custom Script -->
-	    <script src="js/scripts.js"></script>
+			<script src="js/scripts.js"></script>
+			<script src="js/myscript.js"></script>
 	</body>
 </html>
